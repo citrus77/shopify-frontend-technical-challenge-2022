@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  Gallery
+} from './components';
 
 const App = () => {
   return <div>
-    Hello World
+    <Gallery />
   </div>
 }
 
