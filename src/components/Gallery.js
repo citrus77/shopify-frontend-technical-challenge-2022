@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { SinglePic } from '.';
+
 const { REACT_APP_NASA_API_KEY } = process.env;
 
 const Gallery = ({ gallery, setGallery }) => {
@@ -8,7 +10,7 @@ const Gallery = ({ gallery, setGallery }) => {
         try {
             const resp = await fetch (`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=${ REACT_APP_NASA_API_KEY }`)
             const result = await resp.json();
-            setGallery(result);
+            setGallery(result.latest_photos);
             return result;
         } catch (error) {
             console.error(error);
@@ -24,8 +26,12 @@ const Gallery = ({ gallery, setGallery }) => {
     }, [] );
 
     return <>
-        Hello World
-    </>
+        {
+         gallery
+            ? gallery.map(pic => <SinglePic key={pic.id} pic={pic} />)
+            : null
+        }
+    </>;
 };
 
 export default Gallery;
