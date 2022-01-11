@@ -17,6 +17,7 @@
     "url": "https://github.com/citrus77/shopify-frontend-technical-challenge-2022/issues"
   },
   "dependencies": {
+    "dotenv": "^11.0.0",
     "react": "^18.0.0-beta-24dd07bd2-20211208",
     "react-dom": "^18.0.0-beta-24dd07bd2-20211208",
     "react-scripts": "^5.0.0-next.58"
