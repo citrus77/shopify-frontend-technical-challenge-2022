@@ -1,14 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  Gallery
-} from './components';
-
-const App = () => {
-  return <div>
-    <Gallery />
-  </div>
-}
+import { App } from './components';
 
 const app = document.getElementById('app');
+
 ReactDOM.createRoot(app).render(<App />);
