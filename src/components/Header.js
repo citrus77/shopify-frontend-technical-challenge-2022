@@ -6,7 +6,7 @@ const Header = () => {
         <div  className='title'>
             <h1>VIEW FROM MARS</h1>
         </div>
-        <div className='subtitle'>built using NASA's Mars Rover Photos API</div>
+        <div className='subtitle'>images from Curiosity rover courtesy of NASA's Mars Rover Photos API</div>
     </div>
 };
 
