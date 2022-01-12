@@ -1,0 +1,41 @@
+.single-pic {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    background: #ffffff;
+    margin: 8px;
+    min-width: 192px;
+    min-height: 340px;
+    width: 18vw;
+    height: 24vw;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.rover-img {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    object-fit: contain;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.img-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+    justify-content: space-between;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    text-overflow: ellipsis;
+    line-height: 1em;
+    padding: 8px;
+}
+
+.date {
+    padding-top: 8px;
+}

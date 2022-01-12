@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { SinglePic } from '.';
+import './Gallery.css'
 
 const { REACT_APP_NASA_API_KEY } = process.env;
 
@@ -25,13 +26,13 @@ const Gallery = ({ gallery, setGallery }) => {
         };
     }, [] );
 
-    return <>
+    return <div id='gallery'>
         {
          gallery
-            ? gallery.map(pic => <SinglePic key={pic.id} pic={pic} />)
+            ? gallery.map(pic => <SinglePic key={pic.id} pic={pic} className='single-pic' />)
             : null
         }
-    </>;
+    </div>;
 };
 
 export default Gallery;

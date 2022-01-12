@@ -1,0 +1,6 @@
+#App {
+    display: flex;
+    flex-wrap: wrap;
+    background: radial-gradient(#cc0808, #700101e0);
+    height: 100%;
+}
