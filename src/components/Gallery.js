@@ -4,12 +4,12 @@ import './Gallery.css'
 
 const { REACT_APP_NASA_API_KEY } = process.env;
 
-const Gallery = ({ gallery, setGallery }) => {
+const Gallery = ({ rover, gallery, setGallery }) => {
 
     const fetchImages = async () => {
         //fetch images from NASA Mars Photos and set state
         try {
-            const resp = await fetch (`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=${ REACT_APP_NASA_API_KEY }`)
+            const resp = await fetch (`https://api.nasa.gov/mars-photos/api/v1/rovers/${ rover }/latest_photos?api_key=${ REACT_APP_NASA_API_KEY }`)
             const result = await resp.json();
             setGallery(result.latest_photos);
             return result;
