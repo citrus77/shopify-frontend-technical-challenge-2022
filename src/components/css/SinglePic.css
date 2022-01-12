@@ -10,7 +10,7 @@
     margin: 8px;
     min-width: 192px;
     min-height: 340px;
-    width: 18vw;
+    width: 23vw;
     align-items: center;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #ffffff5b;
     font-family: 'Poppins', sans-serif;
@@ -41,4 +41,10 @@
 
 .date {
     padding-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .single-pic {
+        width: 80vw;
+    }
 }

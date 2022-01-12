@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Gallery, Header } from '.';
+import { Gallery, Header, Spacer } from '.';
 import utils from './utils';
 import './css/App.css';
 
@@ -19,6 +19,7 @@ const App = () => {
 
   return <div id='App'>
     <Header fetchImages={fetchImages} />
+    <Spacer />
     <Gallery
       fetchImages={fetchImages}
       gallery={gallery}
