@@ -2,5 +2,5 @@
     display: flex;
     flex-wrap: wrap;
     background: radial-gradient(#cc0808, #380000);
-    height: 100vh;
+    height: 100%;
 }
