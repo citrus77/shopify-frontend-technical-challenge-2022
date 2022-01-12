@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { SinglePic } from '.';
-import './Gallery.css'
+import './css/Gallery.css'
 
-const Gallery = ({ fetchImages, gallery }) => {
+const Gallery = ({ fetchImages, gallery, handleFetchGallery, setGallery }) => {    
     useEffect( () => {
         try {
-            fetchImages();
+            handleFetchGallery();
         } catch (error) {
             console.error (error);
         };

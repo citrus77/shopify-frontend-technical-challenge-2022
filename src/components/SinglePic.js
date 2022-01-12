@@ -1,5 +1,5 @@
 import React from 'react';
-import './SinglePic.css';
+import './css/SinglePic.css';
 
 const SinglePic = ({pic}) => {
     const {
