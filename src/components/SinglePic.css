@@ -10,14 +10,14 @@
     width: 18vw;
     height: 24vw;
     align-items: center;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #ffffff5b;
 }
 
 .rover-img {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
