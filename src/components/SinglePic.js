@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './css/SinglePic.css';
 
 const SinglePic = ({pic}) => {
-    const [ fav, setfav ] = useState('fav unliked');
+    const [ fav, setfav ] = useState('fav');
     const {
         camera,
         earth_date,
@@ -23,11 +23,17 @@ const SinglePic = ({pic}) => {
             <button 
                 className= { fav }
                 onClick = { () => {
-                    fav === 'fav unliked'
+                    fav === 'fav'
                         ? setfav('fav liked')
-                        : setfav('fav unliked')
+                        : setfav('fav')
                 }}
-            >Like</button>
+            >
+            {
+            fav === 'fav'
+                ? <img src='./img/heart.png' alt='unliked' height='32' width='32'/>
+                : <img src='./img/heartfilled.png' alt='liked' height='32' width='32'/>
+            }
+            </button>
         </div>
     </>;
 };

@@ -43,12 +43,6 @@
     padding-top: 8px;
 }
 
-@media screen and (max-width: 600px) {
-    .single-pic {
-        width: 80vw;
-    }
-}
-
 .fav {
     background: transparent;
     text-decoration: none;
@@ -57,8 +51,12 @@
 }
 
 .liked {
-    background: #b41919;
     font-weight: bold;
-    color: #ffffff;
-    border-radius: 40px;
+    color: #b41919;
+}
+
+@media screen and (max-width: 600px) {
+    .single-pic {
+        width: 80vw;
+    }
 }
