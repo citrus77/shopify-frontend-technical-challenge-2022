@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { SinglePic } from '.';
 import './css/Gallery.css'
 
-const Gallery = ({ fetchImages, gallery, handleFetchGallery, setGallery }) => {    
+const Gallery = ({ gallery, handleFetchGallery }) => {    
     useEffect( () => {
         try {
             handleFetchGallery();

@@ -48,3 +48,17 @@
         width: 80vw;
     }
 }
+
+.fav {
+    background: transparent;
+    text-decoration: none;
+    padding: 8px;
+    margin: 10px;
+}
+
+.liked {
+    background: #b41919;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 40px;
+}
