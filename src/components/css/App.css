@@ -1,6 +1,6 @@
 #App {
     display: flex;
     flex-wrap: wrap;
-    background: radial-gradient(#e6caca,#750101d8 );
+    background: radial-gradient(#ff3a3ac2,#750101 );
     height: 100%;
 }
