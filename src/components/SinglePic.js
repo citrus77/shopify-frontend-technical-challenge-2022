@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './css/SinglePic.css';
 
 const SinglePic = ({pic}) => {
-    const [ fav, setfav ] = useState('fav');
+    const [ fav, setfav ] = useState('fav');    
     const {
         camera,
         earth_date,
@@ -12,6 +12,23 @@ const SinglePic = ({pic}) => {
     } = pic;
     const { name } = rover;
     const { full_name } = camera;
+
+    const localLike = {
+        picId: pic.id,
+        classname: fav
+    }
+    const JSON_localLike = JSON.stringify(localLike);
+    const rtvdLocalLike = (localStorage.getItem(`likeStatus${pic.id}`))
+    
+    useEffect( () => {
+        try {
+            if (rtvdLocalLike) {
+                setfav(rtvdLocalLike.classname)
+            }
+        } catch (error) {
+            console.error (error);
+        };
+    }, [] );
 
     return <>
         <div className='single-pic'>
@@ -26,6 +43,7 @@ const SinglePic = ({pic}) => {
                     fav === 'fav'
                         ? setfav('fav liked')
                         : setfav('fav')
+                    localStorage.setItem(`likeStatus${pic.id}`, JSON_localLike)
                 }}
             >
             {
