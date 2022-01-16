@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dbdc8f6e.css",
+    "main.js": "/static/js/main.559db5af.js",
+    "static/media/67344.jpg": "/static/media/67344.fa8560a2f4e5943cf1bc.jpg",
+    "static/media/Blanka-Regular.otf": "/static/media/Blanka-Regular.16f6265b20de0db4a921.otf",
+    "index.html": "/index.html",
+    "main.dbdc8f6e.css.map": "/static/css/main.dbdc8f6e.css.map",
+    "main.559db5af.js.map": "/static/js/main.559db5af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbdc8f6e.css",
+    "static/js/main.559db5af.js"
+  ]
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Gallery, Header, Spacer } from '.';
+import { Footer, Gallery, Header, Spacer } from '.';
 import utils from './utils';
 import './css/App.css';
 
@@ -26,6 +26,8 @@ const App = () => {
       handleFetchGallery={handleFetchGallery}
       setGallery={setGallery}
     />
+    <Spacer />
+    <Footer />
   </div>
 };
 
